@@ -1,7 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-    <title>Mi Página Web</title>
+    <meta charset="UTF-8">
+    <title>Mi Página Web con LAU</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f9fafb;
+            text-align: center;
+        }
+
+        h1, h2 {
+            color: #010101;
+        }
+
         .boton {
             padding: 10px 20px;
             margin: 10px;
@@ -12,30 +24,11 @@
             cursor: pointer;
             font-size: 16px;
         }
+
         .boton:hover {
             background-color: #45a049;
         }
-    </style>
-</head>
-<body>
-    <h1>Bienvenido a mi página web</h1>
-    <button class="boton" type="button">Botón 1</button>
-    <button class="boton" type="button">Botón 2</button>
-    <button class="boton" type="button">Botón 3</button>
-        <button class="boton" type="button">Botón 1</button>
-        <button class="boton" type="button">Botón 2</button>
-        <button class="boton" type="button">Botón 3</button>
-    <!-- ...otros elementos... -->
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Repetir LAU</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f9fafb;
-            text-align: center;
-        }
+
         .lau {
             color: #010101;
             font-size: 2em;
@@ -45,8 +38,16 @@
     </style>
 </head>
 <body>
+    <h1>Bienvenido a mi página web</h1>
+
+    <!-- Botones -->
+    <button class="boton" type="button">Botón 1</button>
+    <button class="boton" type="button">Botón 2</button>
+    <button class="boton" type="button">Botón 3</button>
+
     <h2>Nombre LAU repetido muchas veces</h2>
     <div id="lau-container"></div>
+
     <script>
         const container = document.getElementById('lau-container');
         for(let i=0; i<100; i++) {
